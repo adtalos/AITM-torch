@@ -1,4 +1,4 @@
-# Usage
+# AITM-torch
 
 - [Official Tensorflow implementation](https://github.com/xidongbo/AITM)
 - [Paper](https://arxiv.org/abs/2105.08489)
