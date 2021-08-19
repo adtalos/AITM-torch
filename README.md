@@ -1,7 +1,7 @@
 # Usage
 
-[Official Tensorflow implementation](https://github.com/xidongbo/AITM)
-[Paper](https://arxiv.org/abs/2105.08489)
+- [Official Tensorflow implementation](https://github.com/xidongbo/AITM)
+- [Paper](https://arxiv.org/abs/2105.08489)
 
 ## Dataset
 
