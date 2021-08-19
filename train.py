@@ -8,11 +8,6 @@ from model import AITM
 import numpy as np
 from sklearn.metrics import roc_auc_score
 
-# set rand seed
-
-torch.manual_seed(5555)
-random.seed(5555)
-np.random.seed(5555)
 
 # super parameter
 batch_size = 2000
