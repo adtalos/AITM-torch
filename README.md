@@ -20,7 +20,7 @@ python train.py
 
 ## AUC performance
 
-Test AUC on [Alibaba Click and Conversion Prediction](https://tianchi.aliyun.com/datalab/dataSet.html?dataId=408)
+Test AUC on [Alibaba Click and Conversion Prediction](https://tianchi.aliyun.com/datalab/dataSet.html?dataId=408) dataset
 
 ```
 Test Resutt: click AUC: 0.6189267022220789 conversion AUC:0.6544229866061039
