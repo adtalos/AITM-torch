@@ -6,7 +6,6 @@
 
 int main() {
   std::unordered_map<std::string, torch::Tensor> inputs;
-  // 101 tensor([56460, 56460])
   inputs.insert({"101", torch::tensor({56460, 56460})});
   inputs.insert({"121", torch::tensor({15, 15})});
   inputs.insert({"122", torch::tensor({4, 4})});
