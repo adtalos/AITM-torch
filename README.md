@@ -33,7 +33,7 @@ Test Resutt: click AUC: 0.6189267022220789 conversion AUC:0.6544229866061039
 
 ## Deployment
 Pytorch c++ front is 2x faster than python version and 6x faster than TorchScript when inference.
-We Implement a C++ version that which can load tochscript format file
+We Implement a C++ version that can load tochscript format file
 There is a demo at [cpp](./cpp)
 
 ### build
