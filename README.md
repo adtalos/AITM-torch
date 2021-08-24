@@ -36,4 +36,13 @@ Pytorch c++ front is 2x faster than python version and 6x faster than TorchScrip
 We Implement a C++ version that which can load tochscript format file
 There is a demo at [cpp](./cpp)
 
+### build
+Download libtorh [libtorch installing docs](https://pytorch.org/cppdocs/installing.html)
 
+```
+cd cpp
+mkdir build
+cd build
+cmake -DCMAKE_PREFIX_PATH=/absolute/path/to/libtorch ..
+cmake --build . --config Release
+```
