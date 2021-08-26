@@ -80,7 +80,7 @@ def train():
       optimizer.zero_grad()
       loss.backward()
       optimizer.step()
-      total_loss += loss
+      total_loss += loss.cpu().detach().numpy()
       nb_sample += click.shape[0]
       if step % 200 == 0:
         print('[%d] Train loss on step %d: %.6f' %
