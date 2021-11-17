@@ -108,7 +108,7 @@ class AITM(nn.Module):
     conversion_loss = nn.functional.binary_cross_entropy(
         conversion_pred, conversion_label)
 
-    label_constraint = torch.maximum(conversion_label - click_label,
+    label_constraint = torch.maximum(conversion_pred - click_pred,
                                      torch.zeros_like(click_label))
     constraint_loss = torch.sum(label_constraint)
 
