@@ -47,7 +47,7 @@ struct Attention : public torch::nn::Module {
     auto K = k_layer_->forward(input);
     auto V = v_layer_->forward(input);
 
-    auto a = at::sum(at::mul(Q, V), -1) / at::sqrt(torch::tensor(dim_));
+    auto a = at::sum(at::mul(Q, K), -1) / at::sqrt(torch::tensor(dim_));
     auto as = softmax_->forward(a);
     auto out = at::sum(at::mul(as.unsqueeze(-1), V), 1);
     return out;
