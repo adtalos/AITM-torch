@@ -36,7 +36,7 @@ class Attention(nn.Module):
     Q = self.q_layer(inputs)
     K = self.k_layer(inputs)
     V = self.v_layer(inputs)
-    a = torch.sum(torch.mul(Q, V), -1) / torch.sqrt(torch.tensor(self.dim))
+    a = torch.sum(torch.mul(Q, K), -1) / torch.sqrt(torch.tensor(self.dim))
     a = self.softmax(a)
     outputs = torch.sum(torch.mul(torch.unsqueeze(a, -1), V), dim=1)
     return outputs
